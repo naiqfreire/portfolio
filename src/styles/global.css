@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    .light {
+    --primary-color: #2563EB;   /* Azul royal vivo */
+    --primary-bg: #F8FAFC;     /* Branco "ardósia" (frio) */
+    --secondary-bg: #FFFFFF;   /* Branco puro */
+    --border-color: #E2E8F0;   /* Cinza "ardósia" claro */
+    --title-color: #1E293B;    /* Azul-ardósia BEM escuro (texto) */
+    --text-color: #334155;     /* Azul-ardósia escuro (texto) */
+    --link-color: #2563EB;     /* O mesmo do Primário */
+    --icon-color: #475569;     /* Cinza-ardósia médio */
+    }
+
+    .dark {
+        --primary-color: #3B82F6;   /* Azul vivo (destaque) */
+        --primary-bg: #0F172A;     /* Fundo azul-marinho MUITO escuro */
+        --secondary-bg: #1E293B;   /* Fundo do card (azul-ardósia) */
+        --border-color: #334155;   /* Borda (azul-ardósia) */
+        --title-color: #F1F5F9;    /* Título "ardósia" claro */
+        --text-color: #94A3B8;     /* Texto "ardósia" */
+        --link-color: #60A5FA;     /* Link azul claro (para contraste) */
+        --icon-color: #94A3B8;     /* O mesmo do Texto */
+    }
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    min-height: 100vh;
+    font-size: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary-bg);
+    border-bottom: 1px solid var(--border-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1.5rem 0;
+}
+
+section,
+.top-header,
+footer {
+    width: 100%;
+    padding-inline: clamp(1rem, 5vw, 6rem);
+}
+
+section:not(#hero-section) {
+    padding-block: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 1.5rem + 5vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(1.75rem, 1.25rem + 2.5vw, 2.5rem);
+}
+
+h4 {
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem)
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.icon {
+    color: var(--icon-color);
+    font-size: 2rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white; 
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}

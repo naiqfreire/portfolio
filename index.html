@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Devicon CDN -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=light_mode,moon_stars" />
+    
+    <link rel="stylesheet" href="src/styles/home.css">
+    <title>Naiaque | Portfolio</title>
+</head>
+<body class="dark">
+    <header class="top-header">
+            <h3 class="header-logo">Home</h3>
+            <div class="header-actions">
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#projects-section">Projetos</a></li>
+                        <li><a href="#hero-section">Contato</a></li>
+                    </ul>
+                </nav>
+                <span id="toggle-theme-btn" class="material-symbols-outlined toggle-theme-icon icon">light_mode</span>
+            </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id="hero-section" class="hero-section">
+            <div class="hero-section-text-content">
+                <h1>Naiaque Freire</h1>
+                
+                <p class="subtitle">Desenvolvedor <span>Front-end</span>.</p>
+                <p class="description">Atualmente me aprofundando no desenvolvimento web para criar interfaces limpas e funcionais.</p>
+            </div>
+
+            <ul class="hero-section-contacts">
+                <li><a href="https://github.com/naiqfreire" target="_blank"><i class="fa-brands fa-github icon"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/naiaquefreire" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a></li>
+            </ul>
+
+            <a href="#projects-section" class="view-projects-button">Ver projetos <i class="fa-solid fa-angles-down icon"></i></a>
+        </section>
+
+        <section id="technologies-section" class="technologies-section">
+            <h3>Tecnologias</h3>
+    
+            <div class="tech-groups">
+
+                <div class="tech-group">
+                    <h4>Front-End</h4>
+                    <ul class="technologies">
+                        <li><i class="devicon-html5-plain"></i> HTML5</li>
+                        <li><i class="devicon-css3-plain"></i> CSS3</li>
+                        <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="tech-group">
+                    <h4>Estudando Atualmente</h4>
+                    <ul class="technologies">
+                        <li><i class="devicon-csharp-plain"></i> C#</li>
+                        <li><i class="devicon-fastapi-plain"></i> APIs REST</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-group">
+                    <h4>Ferramentas</h4>
+                    <ul class="technologies">
+                        <li><i class="devicon-git-plain"></i> Git</li>
+                        <li><i class="devicon-github-plain"></i> GitHub</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects-section" class="projects-section">
+            <h3>Projetos</h3>
+
+            <div class="projects-container">
+                <div class="project-box">
+                    <img src="src/images/projects/pokedex.png" alt="Imagem da página inicial da pokedex">
+                    <div class="project-about">
+                        <h4>Pokedex</h4>
+                        
+                        <p>Um site para listagem e consulta de pokemons desenvolvido para aprender consumo de API's e manipulação de DOM.</p>
+                        
+                        <ul class="project-technologies">
+                        <li><i class="devicon-html5-plain"></i> HTML5</li>
+                        <li><i class="devicon-css3-plain"></i> CSS3</li>
+                        <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+                        </ul>
+                    
+                        <div class="project-buttons">
+                            <a href="https://naiqfreire.github.io/pokedex/" target="_blank">Prévia<i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://github.com/naiqfreire/pokedex" target="_blank">Repositório</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <img src="src/images/projects/spider-man.png" alt="Imagem da página inicial do site">
+                    <div class="project-about">
+                        <h4>Spider Multiverse</h4>
+                        
+                        <p>Este projeto lista os filmes do homem-aranha das eras Tobey Maguire, Andrew Garfield e Tom Holland. Foi desenvolvido durante o estudo de front-end na DIO.</p>
+                        
+                        <ul class="project-technologies">
+                        <li><i class="devicon-html5-plain"></i> HTML5</li>
+                        <li><i class="devicon-css3-plain"></i> CSS3</li>
+                        <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+                        </ul>
+                    
+                        <div class="project-buttons">
+                            <a href="https://naiqfreire.github.io/spider-multiverse/" target="_blank">Prévia<i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://github.com/naiqfreire/spider-multiverse" target="_blank">Repositório</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <img src="src/images/projects/yugioh.png" alt="Imagem da página do jogo">
+                    <div class="project-about">
+                        <h4>Yu-gi-oh! Jo-ken-Po Edition</h4>
+                        
+                        <p>Um jogo de Jo-ken-Po com a temática do anime Yu-gi-oh!, onde o usuário duela com o computador. Foi desenvolvido durante o estudo de front-end na DIO.</p>
+                        
+                        <ul class="project-technologies">
+                        <li><i class="devicon-html5-plain"></i> HTML5</li>
+                        <li><i class="devicon-css3-plain"></i> CSS3</li>
+                        <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+                        </ul>
+                    
+                        <div class="project-buttons">
+                            <a href="https://naiqfreire.github.io/yu-gi-oh-game/" target="_blank">Prévia<i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://github.com/naiqfreire/yu-gi-oh-game" target="_blank">Repositório</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="pages/projects.html" class="projects-view-more-button" target="_blank">Ver mais <i class="fa-solid fa-up-right-from-square"></i></a>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <ul class="social-icons">
+            <li><a href="https://github.com/naiqfreire" target="_blank"><i class="fa-brands fa-github icon"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/naiaquefreire" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a></li>
+        </ul>
+
+        <p>&copy; 2025 Naiaque Freire. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <div class="bottom-nav-bar--mobile">
+        <a href="#hero-section"><i class="fa-regular fa-house icon"></i>HOME</a>
+        <a href="#projects-section"><i class="fa-regular fa-folder-open icon"></i>PROJETOS</a>
+        <a href="#hero-section"><i class="fa-regular fa-envelope icon"></i>CONTATO</a>
+    </div>
+
+    <script src="src/scripts/main.js" defer></script>
+</body>
+</html>
